@@ -1,0 +1,14 @@
+{
+    "name": "axel/public",
+    "authors": [
+        {
+            "name": "aolsson",
+            "email": "axel.olsson@chas.se"
+        }
+    ],
+    "autoload": {
+        "files": ["src/Utils/functions.php"],
+        "psr-4": { "Bookstore\\": "src/" }
+    },
+    "require": {}
+}

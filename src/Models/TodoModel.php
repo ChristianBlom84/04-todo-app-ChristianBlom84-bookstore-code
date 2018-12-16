@@ -25,4 +25,17 @@ SQL;
         static::$db->bind(':todo', $post['todocontent']);
         static::$db->resultSet();
     }
+
+    public static function deleteTodo($post)
+    {
+        $query = <<<SQL
+            DELETE FROM todos
+            WHERE todo = :todo
+            LIMIT 1;
+SQL;
+        var_dump(key($post));
+        static::$db->query($query);
+        static::$db->bind(':todo', key($post));
+        static::$db->resultSet();
+    }
 }

@@ -54,7 +54,6 @@ SQL;
 
     public static function toggleTodo($post)
     {
-        var_dump($post);
         $query = <<<SQL
             SELECT * FROM todos;
 SQL;

@@ -14,4 +14,9 @@
             <?php endif; ?>
         </form>
     <?php endforeach; ?>
+    <form action="/" method="GET">
+        <button type="submit" formaction="done">Show done</button>
+        <button type="submit" formaction="in-progress">Show in progress</button>
+        <button type="submit">Show all</button>
+    </form>
 </section>

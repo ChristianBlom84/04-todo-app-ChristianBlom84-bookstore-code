@@ -15,6 +15,18 @@ class TodoController extends AbstractController
         $this->view('index');
     }
 
+    public function getDone()
+    {
+        $this->todoList = TodoModel::getTodoList();
+        $this->view('done');
+    }
+
+    public function getInProgress()
+    {
+        $this->todoList = TodoModel::getTodoList();
+        $this->view('in-progress');
+    }
+
     public function postTodo()
     {
         $this->post = $_POST;

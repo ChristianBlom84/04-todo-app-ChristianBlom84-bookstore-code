@@ -34,4 +34,24 @@ class TodoController extends AbstractController
         $this->todoList = TodoModel::getTodoList();
         $this->view('index');
     }
+
+    public function updateTodo()
+    {
+        $this->post = $_POST;
+        if (!empty($_POST)) {
+            TodoModel::updateTodo($this->post);
+        }
+        $this->todoList = TodoModel::getTodoList();
+        $this->view('index');
+    }
+
+    public function toggleTodo()
+    {
+        $this->post = $_POST;
+        if (!empty($this->post)) {
+            TodoModel::toggleTodo($this->post);
+        }
+        $this->todoList = TodoModel::getTodoList();
+        $this->view('index');
+    }
 }

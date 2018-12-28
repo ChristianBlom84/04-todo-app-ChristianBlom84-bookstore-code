@@ -43,13 +43,6 @@ class IndexController extends AbstractController
         $this->view('book');
     }
 
-    public function postTodo($params = null)
-    {
-        echo "Todo here";
-        var_dump($params);
-        $this->view('index');
-    }
-
     public function param($param)
     {
         echo "Welcome this is the test route with param!";

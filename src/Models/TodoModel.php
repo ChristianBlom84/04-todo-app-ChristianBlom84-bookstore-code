@@ -80,4 +80,16 @@ SQL;
         static::$db->bind(':newStatus', $todoState);
         static::$db->resultSet();
     }
+
+    public static function searchTodo($post)
+    {
+        $query = <<<SQL
+            SELECT * FROM todos
+            WHERE todo LIKE :searchTodo;
+SQL;
+        static::$db->query($query);
+        static::$db->bind(':searchTodo', '%' . $post['search'] . '%');
+        $todos = static::$db->resultSet();
+        return $todos;
+    }
 }

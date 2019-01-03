@@ -30,11 +30,11 @@ SQL;
     {
         $query = <<<SQL
             DELETE FROM todos
-            WHERE todo = :todo
+            WHERE id = :id
             LIMIT 1;
 SQL;
         static::$db->query($query);
-        static::$db->bind(':todo', $post['todoText']);
+        static::$db->bind(':id', $post['todoID']);
         static::$db->resultSet();
     }
 
@@ -61,7 +61,7 @@ SQL;
         static::$db->query($query);
         $todos = static::$db->resultSet();
         foreach ($todos as $todo) {
-            if ($todo['todo'] == $post['toggle']) {
+            if ($todo['id'] == $post['todoID']) {
                 if ($todo['done'] == 0) {
                     $todoState = 1;
                 } else {
@@ -72,11 +72,11 @@ SQL;
         $query = <<<SQL
             UPDATE todos
             SET done = :newStatus
-            WHERE todo = :todo
+            WHERE id = :id
             LIMIT 1;
 SQL;
         static::$db->query($query);
-        static::$db->bind(':todo', $post['toggle']);
+        static::$db->bind(':id', $post['todoID']);
         static::$db->bind(':newStatus', $todoState);
         static::$db->resultSet();
     }

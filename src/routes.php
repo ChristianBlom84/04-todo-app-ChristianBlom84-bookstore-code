@@ -3,7 +3,7 @@
 $router->get('', 'TodoController@get');
 $router->get('done', 'TodoController@getDone');
 $router->get('in-progress', 'TodoController@getInProgress');
-$router->post('add', 'TodoController@postTodo');
+$router->post('create', 'TodoController@createTodo');
 $router->post('delete', 'TodoController@deleteTodo');
 $router->post('update', 'TodoController@updateTodo');
 $router->post('toggle', 'TodoController@toggleTodo');

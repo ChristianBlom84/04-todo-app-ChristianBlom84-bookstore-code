@@ -15,7 +15,7 @@ SQL;
         return $todos;
     }
 
-    public static function addTodo($post)
+    public static function createTodo($post)
     {
         $query = <<<SQL
             INSERT INTO todos (todo)

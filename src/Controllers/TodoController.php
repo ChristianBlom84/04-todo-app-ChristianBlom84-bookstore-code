@@ -27,11 +27,11 @@ class TodoController extends AbstractController
         $this->view('in-progress');
     }
 
-    public function postTodo()
+    public function createTodo()
     {
         $this->post = $_POST;
         if (!empty($_POST['todocontent'])) {
-            TodoModel::addTodo($this->post);
+            TodoModel::createTodo($this->post);
         }
         $this->get();
     }

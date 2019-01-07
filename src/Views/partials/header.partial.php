@@ -10,7 +10,7 @@
     <main role="main">
         <h1><a href="/">Super Duper Todo Hack</a></h1>
         <section class="container">
-        <form action="add" method="POST">
+        <form action="create" method="POST">
             <input type="text" name="todocontent">
             <button type="submit" name="submitTodo" value="Add item">Add Item</button>
         </form>

@@ -6,6 +6,11 @@ use Bookstore\Exceptions\NotFoundException;
 
 abstract class AbstractController
 {
+    protected function getStylesheet($filename)
+    {
+        $file = strtolower($filename);
+        return 'http://' . $_SERVER['HTTP_HOST'] . '/css/' . $file . '.css';
+    }
     /**
      * This method is used to contruct a view
      * It takes parts of the page and combines them with

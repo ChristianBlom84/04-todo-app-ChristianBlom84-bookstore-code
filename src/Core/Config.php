@@ -23,6 +23,4 @@ class Config extends Singleton
         }
         return $this->data[$key];
     }
-
 }
-

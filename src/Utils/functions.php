@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 function getUri()
 {
@@ -12,4 +12,28 @@ function getMethod()
     $method = $_SERVER['REQUEST_METHOD'];
 
     return $method;
+}
+
+function includeWith($filePath, $variables = array())
+{
+    $viewPath = '../src/Views' . $filePath;
+    $output = null;
+
+    if (file_exists($viewPath)) {
+        // Extract the variables to a local namespace
+        extract($variables);
+
+        // Start output buffering
+        ob_start();
+
+        // Include the template file
+        include $viewPath;
+
+        // End buffering and return its contents
+        $output = ob_get_clean();
+    } else {
+        throw new NotFoundException("Couldn't find the view or partial");
+    }
+
+    return $output;
 }

@@ -9,7 +9,7 @@
 </head>
 <body>
     <main role="main">
-        <h1>Super Duper Todo Hack</h1>
+        <h1>Todo Hack</h1>
         <section class="container">
         <form action="create" method="POST">
             <input type="text" name="todocontent">

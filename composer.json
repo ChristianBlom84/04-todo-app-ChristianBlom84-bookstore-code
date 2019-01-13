@@ -1,9 +1,10 @@
 {
-    "name": "axel/public",
+    "name": "christianblom/todo",
     "authors": [
         {
-            "name": "aolsson",
-            "email": "axel.olsson@chas.se"
+            "name": "Christian Blom",
+            "homepage": "https://christianblom.se",
+            "email": "christian.blom@chasacademy.se"
         }
     ],
     "autoload": {

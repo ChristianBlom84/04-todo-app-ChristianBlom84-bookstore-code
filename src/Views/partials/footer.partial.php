@@ -1,7 +1,7 @@
 <!-- View ends here -->
         <form action="/" method="GET">
-            <button class="btn" type="submit" formaction="done">Show done</button>
-            <button class="btn" type="submit" formaction="in-progress">Show in progress</button>
+            <button class="btn green" type="submit" formaction="done">Show done</button>
+            <button class="btn yellow" type="submit" formaction="in-progress">Show in progress</button>
             <button class="btn" type="submit">Show all</button>
         </form>
         <form action="search" method="POST">
@@ -11,7 +11,7 @@
     </section>
     </main>
     <footer role="contentinfo">
-        <p>© Super Duper Bookstore LLC. (No rights reserved what so ever)</p>
+        <p>© Christian Blom LLC. (No rights reserved what so ever)</p>
     </footer>
 </body>
 </html>

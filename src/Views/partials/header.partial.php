@@ -13,7 +13,7 @@
         <section class="container">
         <form action="create" method="POST">
             <input type="text" name="todocontent">
-            <button class="btn" type="submit" name="submitTodo" value="Add item">Add Item</button>
+            <button class="btn teal" type="submit" name="submitTodo" value="Add item">Add Item</button>
         </form>
     <!-- View starts here -->
     

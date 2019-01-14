@@ -37,6 +37,11 @@ input {
     border-radius: 5px;
 }
 
+.toggle {
+    height: 2rem;
+    width: 2rem;
+}
+
 .btn {
     padding: 5px;
     border-radius: 0.5em;
@@ -44,4 +49,16 @@ input {
 
 .red  {
     background-color: #dc3545;
+}
+
+.teal {
+    background-color: #17a2b8;
+}
+
+.yellow {
+    background-color: #ffc107;
+}
+
+.green {
+    background-color: #28a745;
 }

@@ -30,10 +30,10 @@ class TodoController extends AbstractController
     public function createTodo()
     {
         $this->post = $_POST;
-        if (!empty($_POST['todocontent'])) {
+        if (!empty(trim($_POST['todocontent']))) {
             TodoModel::createTodo($this->post);
         }
-        $this->get();
+        $this->redirect('/');
     }
 
     public function deleteTodo()
@@ -42,7 +42,7 @@ class TodoController extends AbstractController
         if (!empty($_POST)) {
             TodoModel::deleteTodo($this->post);
         }
-        $this->get();
+        $this->redirect('/');
     }
 
     public function updateTodo()
@@ -51,7 +51,7 @@ class TodoController extends AbstractController
         if (!empty($_POST)) {
             TodoModel::updateTodo($this->post);
         }
-        $this->get();
+        $this->redirect('/');
     }
 
     public function toggleTodo()
@@ -60,7 +60,7 @@ class TodoController extends AbstractController
         if (!empty($this->post)) {
             TodoModel::toggleTodo($this->post);
         }
-        $this->get();
+        $this->redirect('/');
     }
 
     public function searchTodo()
@@ -69,6 +69,6 @@ class TodoController extends AbstractController
         if (!empty($this->post)) {
             $this->todoList = TodoModel::searchTodo($this->post);
         }
-        $this->view('search');
+        $this->view('index');
     }
 }

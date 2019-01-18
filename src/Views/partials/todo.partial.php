@@ -2,8 +2,5 @@
 <input type="text" name="todoText" value="<?php echo $todo['todo']; ?>" />
 <button class="btn" type="submit" formaction="update" name="updateTodo" value="<?php echo $todo['todo']; ?>">Update</button>
 <button class="btn red" type="submit" formaction="delete" name="deleteTodo" value="<?php echo $todo['todo']; ?>">Delete</button>
-<button class="btn" type="submit" formaction="toggle" name="toggle" value="<?php echo $todo['todo']; ?>">Toggle Done</button>
-<input class="toggle" type="checkbox" name="toggle" onchange="submit();" <?= $todo['done'] === "1" ? 'checked="true"' : "" ?> />
-<?php if ($todo['done'] == 1) : ?>
-    &#10004;
-<?php endif; ?>
+<input class="toggle" type="checkbox" name="toggle" id="<?= $todo['id'] ?>" onchange="submit();" <?= $todo['done'] === "1" ? 'checked="true"' : "" ?> />
+<label for="<?= $todo['id'] ?>"></label>

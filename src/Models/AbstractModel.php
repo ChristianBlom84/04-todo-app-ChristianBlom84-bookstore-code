@@ -1,8 +1,8 @@
 <?php
 
-namespace Bookstore\Models;
+namespace Todo\Models;
 
-use Bookstore\Core\Database;
+use Todo\Core\Database;
 
 abstract class AbstractModel
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Bookstore\Utils;
+namespace Todo\Utils;
 
-use Bookstore\Exceptions\ExceededMaxAllowedException;
-use Bookstore\Exceptions\InvalidIdException;
+use Todo\Exceptions\ExceededMaxAllowedException;
+use Todo\Exceptions\InvalidIdException;
 
 trait Unique
 {

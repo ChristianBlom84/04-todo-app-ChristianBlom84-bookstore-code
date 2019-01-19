@@ -9,7 +9,7 @@
     ],
     "autoload": {
         "files": ["src/Utils/functions.php"],
-        "psr-4": { "Bookstore\\": "src/" }
+        "psr-4": { "Todo\\": "src/" }
     },
     "require": {}
 }

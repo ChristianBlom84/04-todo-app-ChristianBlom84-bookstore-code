@@ -1,6 +1,6 @@
 <?php
 
-namespace Bookstore\Core;
+namespace Todo\Core;
 
 use Exception;
 
@@ -118,7 +118,7 @@ class Router
         try {
             // This is hardcoding to my specific namespace. Which is bad, but for the
             // purpose of moving on, this was left as is.
-            $controller = "Bookstore\\Controllers\\{$controller}";
+            $controller = "Todo\\Controllers\\{$controller}";
             $controller = new $controller();
             
             // If the method we're trying to call doesn't exist in the corresponding controller

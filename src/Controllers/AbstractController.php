@@ -1,8 +1,8 @@
 <?php
 
-namespace Bookstore\Controllers;
+namespace Todo\Controllers;
 
-use Bookstore\Exceptions\NotFoundException;
+use Todo\Exceptions\NotFoundException;
 
 abstract class AbstractController
 {

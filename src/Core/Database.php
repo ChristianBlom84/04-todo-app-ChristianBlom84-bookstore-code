@@ -1,12 +1,12 @@
 <?php
 
-namespace Bookstore\Core;
+namespace Todo\Core;
 
 use \PDO;
 use \PDOException;
 
-use Bookstore\Utils\Singleton;
-use Bookstore\Core\Config;
+use Todo\Utils\Singleton;
+use Todo\Core\Config;
 
 class Database extends Singleton
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Bookstore\Utils;
+namespace Todo\Utils;
 
 abstract class Singleton
 {

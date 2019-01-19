@@ -1,9 +1,9 @@
 <?php
 
-namespace Bookstore\Core;
+namespace Todo\Core;
 
-use Bookstore\Utils\Singleton;
-use Bookstore\Exceptions\KeyWasNotFoundInJsonConfigException;
+use Todo\Utils\Singleton;
+use Todo\Exceptions\KeyWasNotFoundInJsonConfigException;
 
 class Config extends Singleton
 {

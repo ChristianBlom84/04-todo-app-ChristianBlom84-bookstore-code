@@ -1,8 +1,8 @@
 <?php
 
-namespace Bookstore\Controllers;
+namespace Todo\Controllers;
 
-use Bookstore\Models\TodoModel;
+use Todo\Models\TodoModel;
 
 class TodoController extends AbstractController
 {

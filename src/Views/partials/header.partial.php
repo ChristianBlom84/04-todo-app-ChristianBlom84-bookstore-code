@@ -13,9 +13,7 @@
         <section class="container">
         <div class="formcontainer">
             <form action="create" method="POST">
-                <input type="text" name="todocontent">
+                <input type="text" name="todocontent" autofocus>
                 <button class="btn teal" type="submit" name="submitTodo" value="Add item">Add Item</button>
             </form>
-            
         </div>
-    

@@ -54,7 +54,7 @@ abstract class AbstractController
         }
     }
 
-    public function redirect($url, $permanent = false) 
+    public function redirect($url, $permanent = false)
     {
         if ($permanent) {
             header('HTTP/1.1 301 Moved Permanently');

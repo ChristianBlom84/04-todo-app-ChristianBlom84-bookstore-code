@@ -38,6 +38,17 @@ SQL;
         static::$db->resultSet();
     }
 
+    public static function deleteCompleted($post)
+    {
+        $query = <<<SQL
+            DELETE FROM todos
+            WHERE done = :status
+SQL;
+        static::$db->query($query);
+        static::$db->bind(':status', 1);
+        static::$db->resultSet();
+    }
+
     public static function updateTodo($post)
     {
         $query = <<<SQL

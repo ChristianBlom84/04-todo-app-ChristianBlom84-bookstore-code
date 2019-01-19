@@ -1,5 +1,6 @@
 {
     "name": "christianblom/todo",
+    "description": "A simple MVC todo app.",
     "authors": [
         {
             "name": "Christian Blom",

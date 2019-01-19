@@ -45,6 +45,15 @@ class TodoController extends AbstractController
         $this->redirect('/');
     }
 
+    public function deleteCompleted()
+    {
+        $this->post = $_POST;
+        if (!empty($_POST)) {
+            TodoModel::deleteCompleted($this->post);
+        }
+        $this->redirect('/');
+    }
+
     public function updateTodo()
     {
         $this->post = $_POST;

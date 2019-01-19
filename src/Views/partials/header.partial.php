@@ -16,8 +16,6 @@
                 <input type="text" name="todocontent">
                 <button class="btn teal" type="submit" name="submitTodo" value="Add item">Add Item</button>
             </form>
-            <form action="toggle-all" method="POST">
-                <button class="btn yellow" type="submit" name="toggle-all">Toggle All</button>
-            </form>
+            
         </div>
     

@@ -81,6 +81,30 @@ SQL;
         static::$db->resultSet();
     }
 
+    public static function toggleAll($post)
+    {
+        $query = <<<SQL
+            SELECT * FROM todos;
+SQL;
+        
+        static::$db->query($query);
+        $todos = static::$db->resultSet();
+        foreach ($todos as $todo) {
+            if ($todo['done'] == 0) {
+                $todoState = 1;
+            } else {
+                $todoState = 0;
+            }
+        }
+        $query = <<<SQL
+            UPDATE todos
+            SET done = :newStatus
+SQL;
+        static::$db->query($query);
+        static::$db->bind(':newStatus', $todoState);
+        static::$db->resultSet();
+    }
+
     public static function searchTodo($post)
     {
         $query = <<<SQL

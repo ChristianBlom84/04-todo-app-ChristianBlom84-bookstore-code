@@ -63,6 +63,15 @@ class TodoController extends AbstractController
         $this->redirect('/');
     }
 
+    public function toggleAll()
+    {
+        $this->post = $_POST;
+        if (!empty($this->post)) {
+            TodoModel::toggleAll($this->post);
+        }
+        $this->redirect('/');
+    }
+
     public function searchTodo()
     {
         $this->post = $_POST;

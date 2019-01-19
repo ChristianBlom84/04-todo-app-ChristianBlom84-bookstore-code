@@ -1,5 +1,4 @@
-<!-- View ends here -->
-        <form action="/" method="GET">
+        <form class="footerstart" action="/" method="GET">
             <button class="btn green" type="submit" formaction="done">Show done</button>
             <button class="btn yellow" type="submit" formaction="in-progress">Show in progress</button>
             <button class="btn" type="submit">Show all</button>

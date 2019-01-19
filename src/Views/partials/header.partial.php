@@ -11,9 +11,13 @@
     <main role="main">
         <h1>Todo Hack</h1>
         <section class="container">
-        <form action="create" method="POST">
-            <input type="text" name="todocontent">
-            <button class="btn teal" type="submit" name="submitTodo" value="Add item">Add Item</button>
-        </form>
-    <!-- View starts here -->
+        <div class="formcontainer">
+            <form action="create" method="POST">
+                <input type="text" name="todocontent">
+                <button class="btn teal" type="submit" name="submitTodo" value="Add item">Add Item</button>
+            </form>
+            <form action="toggle-all" method="POST">
+                <button class="btn yellow" type="submit" name="toggle-all">Toggle All</button>
+            </form>
+        </div>
     

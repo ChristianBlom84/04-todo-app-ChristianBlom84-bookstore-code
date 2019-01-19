@@ -28,6 +28,16 @@ main {
     max-width: 900px;
 }
 
+.formcontainer {
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 1rem;
+}
+
+.formcontainer > form {
+    margin-top: 0;
+}
+
 form {
     margin-top: 0.5em;
     display: flex;
@@ -117,4 +127,8 @@ input[type=checkbox]:checked:disabled + label:before {
     transform: scale(1);
     background-color: #bfb;
     border-color: #bfb;
+}
+
+.footerstart {
+    margin-top: 1rem;
 }
